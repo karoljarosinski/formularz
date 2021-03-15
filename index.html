@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Rejestracja</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body style="margin-left: 200px; margin-right: 200px;">
+        <form>
+        <h1>Rejestracja</h1>
+        <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Imię</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Wpisz imię">
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Nazwisko</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Wpisz nazwisko">
+          </div>
+          <fieldset class="row mb-3">
+              <div>
+                  <legend class="col-form-label col-sm-2 pt-0">Płeć</legend>
+              </div>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  Kobieta
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Mężczyzna
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        <div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Adres email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Wpisz adres email">
+              </div>
+        </div>
+        <div>
+            <label for="inputPassword5" class="form-label">Hasło</label>
+            <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Hasło">
+            <div id="passwordHelpBlock" class="form-text">
+              Min. 8 znaków
+            </div>
+        </div>
+        <div>
+            <div class="row g-3">
+                <div class="col-sm-7">
+                    <label for="inputCity" class="form-label">Miasto</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-sm">
+                    <label for="inputState" class="form-label">Województwo</label>
+                    <div>
+                    <select id="inputState" class="form-select">
+                        <option selected disabled>Wybierz...</option>
+                        <option>Pomorskie</option>
+                        <option>Małopolskie</option>
+                        <option>Mazowieckie</option>
+                        <option>Lubelskie</option>
+                    </select>
+                </div>
+                </div>
+                <div class="col-sm">
+                    <label for="inputCity" class="form-label">Kod pocztowy</label>
+                    <input type="number" class="form-control" id="inputCity">
+                </div>
+              </div>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Akceptuję <a href="">regulamin</a>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Wyrażam zgodę na otrzymywanie informacji marketigowych
+                </label>
+              </div>
+        <button type="button" class="btn btn-primary">Rejestruj</button>
+    </form>
+    </body>
+</html>
